@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dani's Music Corner ♡</title>
+
+
+    <style>
+
+        /* ==========================
+           BASIC PAGE
+           ========================== */
+
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            background: #eee9df;
+
+            color: #25221e;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+        }
+
+
+        /* ==========================
+           MAIN CONTAINER
+           ========================== */
+
+        .container {
+
+            width: 85%;
+
+            max-width: 900px;
+
+            margin: 70px auto;
+
+            text-align: center;
+
+        }
+
+
+        /* ==========================
+           HEADER
+           ========================== */
+
+        .little-heart {
+
+            font-size: 28px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        h1 {
+
+            font-size: 52px;
+
+            font-weight: normal;
+
+            margin: 0;
+
+        }
+
+
+        .subtitle {
+
+            font-size: 17px;
+
+            font-style: italic;
+
+            margin-top: 12px;
+
+            margin-bottom: 55px;
+
+        }
+
+
+        /* ==========================
+           MAIN BOX
+           ========================== */
+
+        .music-box {
+
+            background: #fffaf1;
+
+            border: 1px solid #25221e;
+
+            padding: 35px;
+
+            box-shadow: 9px 9px 0 #25221e;
+
+        }
+
+
+        h2 {
+
+            font-size: 29px;
+
+            font-weight: normal;
+
+            margin-top: 0;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        /* ==========================
+           ARTIST GRID
+           ========================== */
+
+        .artists {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 28px;
+
+        }
+
+
+        /* ==========================
+           ARTIST CARD
+           ========================== */
+
+        .artist {
+
+            background: #eee9df;
+
+            border: 1px solid #25221e;
+
+            padding: 14px;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+
+        }
+
+
+        /* Cute little hover effect */
+
+        .artist:hover {
+
+            transform:
+                translateY(-7px)
+                rotate(-1.5deg);
+
+            box-shadow: 5px 5px 0 #25221e;
+
+        }
+
+
+        /* ==========================
+           ARTIST IMAGE
+           ========================== */
+
+        .artist img {
+
+            width: 100%;
+
+            height: 250px;
+
+            object-fit: cover;
+
+            display: block;
+
+            margin-bottom: 17px;
+
+        }
+
+
+        /* ==========================
+           ARTIST NAME
+           ========================== */
+
+        .artist-name {
+
+            font-size: 23px;
+
+            font-weight: bold;
+
+        }
+
+
+        /* ==========================
+           LITTLE DESCRIPTION
+           ========================== */
+
+        .description {
+
+            font-size: 14px;
+
+            font-style: italic;
+
+            line-height: 1.5;
+
+            margin-top: 8px;
+
+        }
+
+
+        /* ==========================
+           FOOTER
+           ========================== */
+
+        footer {
+
+            margin-top: 55px;
+
+            font-size: 13px;
+
+            opacity: 0.6;
+
+        }
+
+
+        /* ==========================
+           PHONE VERSION
+           ========================== */
+
+        @media (max-width: 650px) {
+
+            .artists {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            h1 {
+
+                font-size: 39px;
+
+            }
+
+
+            .music-box {
+
+                padding: 20px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- HEADER -->
+
+        <div class="little-heart">
+            ♡
+        </div>
+
+
+        <h1>
+            Dani's Music Corner
+        </h1>
+
+
+        <p class="subtitle">
+            things I like, things I think about,
+            and music I can't stop listening to
+        </p>
+
+
+
+        <!-- MUSIC SECTION -->
+
+        <div class="music-box">
+
+
+            <h2>
+                ♫ Favorite Artists
+            </h2>
+
+
+
+            <div class="artists">
+
+
+                <!-- BLACK COUNTRY, NEW ROAD -->
+
+                <div class="artist">
+
+                    <img
+                        src="images/bc-nr.jpg"
+                        alt="Black Country, New Road"
+                    >
+
+                    <div class="artist-name">
+                        Black Country, New Road
+                    </div>
+
+                    <div class="description">
+                        beautiful, chaotic, slightly devastating.
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOEBE BRIDGERS -->
+
+                <div class="artist">
+
+                    <img
+                        src="images/phoebe.jpg"
+                        alt="Phoebe Bridgers"
+                    >
+
+                    <div class="artist-name">
+                        Phoebe Bridgers
+                    </div>
+
+                    <div class="description">
+                        for staring dramatically out of windows.
+                    </div>
+
+                </div>
+
+
+
+                <!-- NICK DRAKE -->
+
+                <div class="artist">
+
+                    <img
+                        src="images/nick-drake.jpg"
+                        alt="Nick Drake"
+                    >
+
+                    <div class="artist-name">
+                        Nick Drake
+                    </div>
+
+                    <div class="description">
+                        quiet songs for quiet moments.
+                    </div>
+
+                </div>
+
+
+
+                <!-- THE BEATLES -->
+
+                <div class="artist">
+
+                    <img
+                        src="images/beatles.jpg"
+                        alt="The Beatles"
+                    >
+
+                    <div class="artist-name">
+                        The Beatles
+                    </div>
+
+                    <div class="description">
+                        because obviously.
+                    </div>
+
+                </div>
+
+
+
+                <!-- BJÖRK -->
+
+                <div class="artist">
+
+                    <img
+                        src="images/bjork.jpg"
+                        alt="Björk"
+                    >
+
+                    <div class="artist-name">
+                        Björk
+                    </div>
+
+                    <div class="description">
+                        strange, beautiful,
+                        completely otherworldly.
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            made with ♡ and questionable coding skills
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>
